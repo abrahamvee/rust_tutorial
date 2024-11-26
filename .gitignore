@@ -1,0 +1,39 @@
+# General ignores for Rust projects
+**/target/
+**/Cargo.lock
+
+# Ignore build artifacts
+**/debug/
+**/release/
+**/*.rlib
+
+# Ignore generated files
+**/*.d
+**/*.o
+**/*.so
+**/*.dll
+**/*.exe
+
+# Editor and IDE specific
+**/.idea/
+**/.vscode/
+**/*.rs.bk
+**/*.swp
+
+# Ignore user or temporary files
+**/*.tmp
+**/*.bak
+**/*~
+**/thumbs.db
+**/.DS_Store
+
+# Ignore documentation artifacts
+**/doc/
+
+# Only track important files
+# (e.g., Cargo.toml, Cargo.lock, src/ and any other relevant project files)
+!/Cargo.toml
+!/src/
+
+# Ensure to not ignore README files
+!README.md
